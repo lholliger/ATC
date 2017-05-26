@@ -4,6 +4,8 @@
   <title>AT Challanges</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <?php
+ini_set('display_errors', 1);
+error_reporting(~0);
 session_start();
  ?>
 </head>
@@ -19,13 +21,21 @@ session_start();
       Home
     </button>
   </a>
-<a href='new.php'>
-    <button class='nav-part'>
-      New Post
-    </button>
-</a>
+  <a href='posts.php'>
+      <button class='nav-part'>
+        Posts
+      </button>
+  </a>
     <?php
+    if(!isset($_SESSION['LOG'])) {
+      $_SESSION['LOG'] = False;
+    }
     if ($_SESSION['LOG'] == True) { ?>
+      <a href='new.php'>
+          <button class='nav-part'>
+            New Post
+          </button>
+      </a>
       <a href='logout.php'>
       <button class='nav-part'>
         Log Out

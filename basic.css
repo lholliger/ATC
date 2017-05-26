@@ -104,3 +104,13 @@ input {
   border-radius: 5px;
   margin: 5px;
 }
+
+
+.notify {
+  border: none;
+  padding: 3px;
+  border-radius: 5px;
+  margin: 8px;
+  color: white;
+  background: green;
+}
