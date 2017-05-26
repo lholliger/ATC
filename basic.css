@@ -160,6 +160,7 @@ textarea {
   text-align: left;
   width: 100%;
   padding: 10px;
+  box-sizing: border-box;
   border-bottom: 1px solid gray;
   background-color: lightgray;
 }
@@ -177,6 +178,7 @@ textarea {
   text-align: left;
   width: 100%;
   padding: 10px;
+  box-sizing: border-box;
   background-color: white;
 }
 
