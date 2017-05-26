@@ -1,7 +1,7 @@
 <head>
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="basic.css?<?php echo date('l jS \of F Y h:i:s A'); ?>">
-  <title>AT Challanges</title>
+  <title>AT Challenges</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <?php
 ini_set('display_errors', 1);
@@ -13,7 +13,7 @@ session_start();
   <div class='nav'>
     <a href='index.php'>
     <button class='nav-head'>
-      AT Challanges
+      AT Challenges
     </button>
   </a>
 <a href='index.php'>
