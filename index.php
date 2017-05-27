@@ -24,8 +24,8 @@ if ($_GET["notify"] == "out") {
 <span class='ISSUE'>ISSUE</span> There is an issue preventing the challenge from being doable<br><br>
 
 <h2>Types of Challenges:</h2>
-<span class='t-crypt'>ENCRYPTION</span> Challenge involes deciphering a string<br><br>
-<span class='t-ctf'>CTF</span> Capture the flag<br><br>
+<span class='t-crypt'>ENCRYPTION</span> Challenge involves deciphering a string<br><br>
+<span class='t-ctf'>CTF</span> Capture the Flag<br><br>
 <span class='t-code'>CODE</span> Competition to write something that is in the challenge<br><br>
 
 <span class='t-etc'>OTHER</span> Something else not listed<br><br>
