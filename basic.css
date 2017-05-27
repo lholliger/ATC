@@ -180,6 +180,7 @@ textarea {
   padding: 10px;
   box-sizing: border-box;
   background-color: white;
+  word-wrap: break-word;
 }
 
 h1 {
