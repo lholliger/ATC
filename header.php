@@ -1,13 +1,13 @@
-<head>
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="basic.css?<?php echo date('l jS \of F Y h:i:s A'); ?>">
-  <title>AT Challenges</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 <?php
 ini_set('display_errors', 1);
 error_reporting(~0);
 session_start();
  ?>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="basic.css?<?php echo date('l jS \of F Y h:i:s A'); ?>">
+  <title>AT Challenges</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
   <div class='nav'>
