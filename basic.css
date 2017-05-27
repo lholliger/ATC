@@ -17,17 +17,17 @@ body {
 .nav-head {
   color: white;
   font-weight: bold;
-  border: 0;
-  background-color: black;
-  height: 30px;
+  text-decoration: none;
+  font-size: 13.3333px;
+  margin: 5px;
 }
 
 
 .nav-part {
   color: lightgray;
-  border: 0;
-  background-color: black;
-  height: 30px;
+  text-decoration: none;
+  font-size: 13.3333px;
+  margin: 5px;
 }
 
 .container {
