@@ -11,50 +11,36 @@ session_start();
 </head>
 <body>
   <div class='nav'>
-    <a href='index.php'>
-    <button class='nav-head'>
+    <a href='index.php' class='nav-head'>
       AT Challenges
-    </button>
-  </a>
-<a href='index.php'>
-    <button class='nav-part'>
+    </a>
+    <a href='index.php' class='nav-part'>
       Home
-    </button>
-  </a>
-  <a href='posts.php'>
-      <button class='nav-part'>
-        Posts
-      </button>
-  </a>
+    </a>
+    <a href='posts.php' class='nav-part'>
+      Posts
+    </a>
     <?php
     if(!isset($_SESSION['LOG'])) {
       $_SESSION['LOG'] = False;
     }
     if ($_SESSION['LOG'] == True) { ?>
-      <a href='new.php'>
-          <button class='nav-part'>
-            New Post
-          </button>
+      <a href='new.php' class='nav-part'>
+        New Post
       </a>
-      <a href='logout.php'>
-      <button class='nav-part'>
+      <a href='logout.php' class='nav-part'>
         Log Out
-      </button>
-    </a>
-      <?php
+      </a>
+    <?php
     } else {
-      ?>
-<a href='login.php'>
-      <button class='nav-part'>
+    ?>
+      <a href='login.php' class='nav-part'>
         Log In
-      </button>
-    </a>
-<a href='signup.php'>
-      <button class='nav-part'>
+      </a>
+      <a href='signup.php' class='nav-part'>
         Sign Up
-      </button>
-    </a>
-      <?php
+      </a>
+    <?php
     }
-     ?>
+    ?>
   </div>
