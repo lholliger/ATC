@@ -14,7 +14,7 @@ if (file_exists("../data/users/" . $_POST['username'])) {
   $res = "Username in use";
 }
 
-if(preg_match("/^[a-zA-Z0-9]+$/", $_POST['username']) != 1) {
+if(preg_match("/^[a-zA-Z0-9-_]+$/", $_POST['username']) != 1) {
     $pass = 1;
     $res = "Username can only contain a-z 0-9";
 }

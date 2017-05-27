@@ -34,6 +34,6 @@ if ($_GET["notify"] == "out") {
 <p>If you win a competition the OP will be able to mark it as solved and you get a "point" that goes on the leaderboard</p>
 <p>Anyone can mark the task as ISSUE, but only the OP can mark it as OPEN or SOLVED</p>
 <p>The OP cannot award themselves wins and site moderators can remove points if they believe it is unfair</p>
-<p>Verified people from scratch get a star by their name</p>
+<p>Verified people from Scratch get a star by their name</p>
 </body>
  </div>

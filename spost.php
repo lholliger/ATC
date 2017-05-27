@@ -9,8 +9,11 @@ $password = $_SESSION['PASSWORD'];
 
 if (file_exists("../data/users/$username")) {
   if (password_verify($password, trim(preg_replace('/\s\s+/', '', file_get_contents("../data/users/$username/password"))))) {
-    $p_data = strip_tags($p_data);
-    $title = strip_tags($title);
+    $title = str_replace(">", "&#62;", $title);
+    $title = str_replace("<", "&#60;", $title);
+
+    $p_data = str_replace(">", "&#62;", $p_data);
+    $p_data = str_replace("<", "&#60;", $p_data);
     $p_data = nl2br($p_data);
     $pid = uniqid();
     $path = "../data/posts/$pid/";
