@@ -6,6 +6,7 @@ session_start();
 <head>
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="basic.css?<?php echo date('l jS \of F Y h:i:s A'); ?>">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.6.4/showdown.min.js"></script>
   <title>AT Challenges</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
