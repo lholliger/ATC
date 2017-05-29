@@ -13,7 +13,7 @@ foreach ($files as $post) {
   ?>
   <br><br>
   <div class='post'>
-    <a class='hide' href='post.php?id=<?php echo(substr($post, strrpos($post, '/') + 1)) ?>'>
+    <a class='hide' href='<?php echo(substr($post, strrpos($post, '/') + 1)) ?>'>
     <div class='pi'>
       <?php
       $path = $post;
