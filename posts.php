@@ -68,3 +68,15 @@ foreach ($files as $post) {
 <?php
 }
  ?>
+      
+<script>
+    var converter = new showdown.Converter(),
+    
+    var elements = document.body.getElementsByClassName("pc");
+
+    window.onload = function() {
+      for (i = 0; i < elements.length; i++) {
+        elements[i].innerHTML = converter.makeHtml(elements[i].innerHTML);
+      }
+    }
+</script>
