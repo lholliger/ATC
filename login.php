@@ -14,7 +14,12 @@ if ($_GET["err"] == "3") {
  <div class='container'>
    <h1>Log in</h1>
 
-   <form action="verify.php" method="post">
+   <form action="verify.php" method="post" id="form">
    Username: <input type="text" name="username"><br>
    Password: <input type="password" name="pass0"><br>
    <input type="submit">
+   <script>document.body.onkeydown = function(e){
+   if(e.keyCode == 13){
+     document.getElementById("form").submit();
+   }
+};</script>
