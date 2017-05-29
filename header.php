@@ -11,10 +11,10 @@ session_start();
 </head>
 <body>
   <div class='nav'>
-    <a href='index.php' class='nav-head'>
+    <a href='/' class='nav-head'>
       AT Challenges
     </a>
-    <a href='index.php' class='nav-part'>
+    <a href='/' class='nav-part'>
       Home
     </a>
     <a href='posts.php' class='nav-part'>
