@@ -16,6 +16,7 @@ Challenge Type: <select name="type">
   <option value="ctf">Capture the Flag</option>
   <option value="code">Coding</option>
   <option value="etc">Other</option>
+  <option value='cg'>Code Golf</option>
 </select><br>
   <input class='sub' type="submit">
   </form>

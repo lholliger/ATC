@@ -22,6 +22,10 @@ span {
     echo("</h1> <span class='t-ctf'>CTF</span> ");
   }
 
+  if ($type == "cg") {
+    echo("</h1> <span class='t-cg'>CODE GOLF</span> ");
+  }
+
   if ($type == "code") {
     echo("</h1> <span class='t-code'>CODE</span> ");
   }
