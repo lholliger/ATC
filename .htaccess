@@ -1,2 +1,4 @@
 RewriteEngine on 
+RewriteCond %{THE_REQUEST} ^GET.*index\.php [NC]
+RewriteRule (.*?)index\.php/*(.*) /$1$2 [R=301,NE,L]
 RewriteRule ^([A-Za-z0-9-]+)/?$ ./post.php?id=$1 [NC]
