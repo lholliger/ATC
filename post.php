@@ -50,7 +50,8 @@ span {
         <?php echo(file_get_contents("$path/0/poster")); ?> posted at <?php echo(file_get_contents("$path/0/time")) ?>
       </div>
       <div class='pc'>
-        <?php echo(file_get_contents("$path/0/contents")); ?>
+        <?php echo(preg_replace("~[[:alpha:]]+://[^<>[:space:]]+[[:alnum:]/]~",
+              "<a href=\"\\0\">\\0</a>",file_get_contents("$path/0/contents"))); ?>
       </div>
     </div>
 <?php
@@ -67,7 +68,8 @@ foreach ($files as $post) {
       <?php echo(file_get_contents("$post/poster")); ?> replied at <?php echo(file_get_contents("$post/time")) ?>
     </div>
     <div class='pc'>
-      <?php echo(file_get_contents("$post/contents")); ?>
+      <?php echo(preg_replace("~[[:alpha:]]+://[^<>[:space:]]+[[:alnum:]/]~",
+              "<a href=\"\\0\">\\0</a>",file_get_contents("$post/contents"))); ?>
     </div>
   </div>
   <?php
